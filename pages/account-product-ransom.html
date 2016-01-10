@@ -65,7 +65,7 @@
                     <li>
                         <div class="account-side-nav">
                             <p><a href="./account.html"><span class="am-badge am-round">账</span> 账户总览</a></p>
-                            <p><a href="./account-product-1.html"><span class="am-badge am-round">活</span> 活期</a></p>
+                            <p><a class="active" href="./account-product-1.html"><span class="am-badge am-round">活</span> 活期</a></p>
                             <p><a href="###"><span class="am-badge am-round">优</span> 优选</a></p>
                             <p><a href="###"><span class="am-badge am-round">稳</span> 稳赢</a></p>
                         </div>
@@ -75,7 +75,7 @@
                             <p><a href="./account-score-records.html"><i class="am-icon-cubes am-icon-btn"></i> 积分</a></p>
                             <p><a href="./account-coupon.html"><i class="am-icon-gift am-icon-btn"></i> 优惠券</a></p>
                             <p><a href="./account-transaction-records.html"><i class="am-icon-database am-icon-btn"></i> 交易记录</a></p>
-                            <p><a class="active" href="###"><i class="am-icon-shield am-icon-btn"></i> 安全设置</a></p>
+                            <p><a href="./account-security.html"><i class="am-icon-shield am-icon-btn"></i> 安全设置</a></p>
                         </div>
                     </li>
                 </ul>
@@ -85,47 +85,64 @@
             <div class="account-breadcrumb am-panel am-panel-default">
                 <div class="am-panel-bd">
                     <ol class="am-breadcrumb">
-                        <li><a href="#" class="am-icon-home">首页</a></li>
-                        <li><a href="#">安全设置</a></li>
-                        <li class="am-active">登录记录</li>
+                        <li><a href="./default.html" class="am-icon-home">首页</a></li>
+                        <li><a href="./account.html">活期</a></li>
+                        <li class="am-active">赎回</li>
                     </ol>
                 </div>
             </div>
-            <div class="am-panel am-panel-default">
-                <div class="am-panel-bd">
-                    <p>近七天登录记录</p>
-                    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
-                    <table class="am-table am-table-striped am-table-hover am-text-center">
-                        <thead>
-                            <tr>
-                                <th>日期</th>
-                                <th>登录设备</th>
-                                <th>登录地点</th>
-                                <th>登录IP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2015-11-02 15:51</td>
-                                <td>电脑网页版</td>
-                                <td>北京市</td>
-                                <td>119.80.***.***</td>
-                            </tr>
+            <div class="account-cards">
+                <div class="am-panel am-panel-default">
+                    <div class="am-panel-bd am-cf">
+                        <h1 class="am-u-sm-4 am-u-sm-centered am-u-lg-uncentered">赎回活期</h1>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                        <form class="am-form am-form-horizontal am-margin-top-xl am-margin-bottom-xl">
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-3 am-form-label am-text-left">活期持有份额</label>
+                                <div class="am-u-sm-5 am-form-text">
+                                    <span class="am-text-lg">￥9146.43</span>
+                                </div>
+                                <div class="am-u-sm-4"></div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label am-text-left">赎回金额</label>
+                                <div class="am-u-sm-5">
+                                    <input type="password" id="doc-ipt-pwd-2" class="am-round" placeholder="">
+                                </div>
+                                <div class="am-u-sm-4"></div>
+                            </div>
+                            <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-3 am-form-label am-text-left">赎回持有份额</label>
+                                <div class="am-u-sm-5 am-form-text">
+                                    <span class="am-text-lg">￥0.00</span>
+                                </div>
+                                <div class="am-u-sm-4"></div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-3 am-form-label am-text-left">少赚取收益</label>
+                                <div class="am-u-sm-9 am-form-text">
+                                    资金赎回后，七天的收益将少赚<span class="">￥0.00</span>
+                                </div>
+                            </div>
 
 
-                        </tbody>
-                    </table>
-                    <ul class="am-pagination am-pagination-right am-text-xs">
-                        <li class="am-disabled"><a href="#">&laquo;</a></li>
-                        <li class="am-active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
+                            <div class="am-form-group">
+                                <div class="am-u-sm-5 am-u-sm-offset-3">
+                                    <button type="submit" class="am-btn sign-btn-submit am-btn-warning am-btn-xl am-btn-block am-round">赎 &nbsp; &nbsp; 回</button>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
                 </div>
+
+
             </div>
+
         </div>
     </div>
 
@@ -179,11 +196,8 @@
     <script src="/static/js/ztb.js"></script>
     <script>
         $(function() {
-            for (var i = 0, len = 12; i < len; i++) {
-                $('.am-table tbody tr:first').clone().appendTo('.am-table tbody');
-            }
-
-        });
+            $('#doc-my-tabs').tabs();
+        })
 
     </script>
 

@@ -19,9 +19,9 @@
     <header class="am-topbar am-margin-bottom-0">
         <div class="am-container">
             <h1 class="am-topbar-brand"><img src="/static/img/logo.jpg" alt=""></h1>
-            <div class="am-topbar-right am-text-xs topbar-more topbar-sign">
-                <a class="navbar-link active" href="#">登录</a>
-                <a class="navbar-link" href="#">注册</a>
+            <div class="am-topbar-right am-text-sm topbar-more">
+                <a class="navbar-link active" href="#">我的账户</a>
+                <a class="navbar-link" href="#">退出</a>
             </div>
 
 
@@ -39,62 +39,34 @@
     </header>
 
     <!--  布局  -->
-    <div class="am-container layer-sign">
-        <h1 class="sign-title am-text-center am-text-xxl">登 &nbsp;&nbsp; 录</h1>
-        <div class="sign-panel am-panel am-panel-default">
-            <div class="am-panel-bd am-g">
-                <div class="am-u-sm-12 am-u-lg-6">
-                    <form class="am-form sign-form am-form-horizontal">
-                        <div class="am-u-sm-12 sign-tips">
-                            <p class="tips-error am-hide">
-                                <i class="fa fa-exclamation-circle"></i> 密码错误
-                            </p>
-                        </div>
-                        <div class="am-form-group">
-                            <label for="doc-ipt-3" class="am-u-sm-3 am-form-label">用户名</label>
-                            <div class="am-u-sm-9">
-                                <input type="email" id="doc-ipt-3" class="am-round" placeholder="">
-                            </div>
-                        </div>
+    <div class="am-container layer-account am-g am-margin-top-lg">
+        <div class="am-panel am-panel-default am-margin-bottom-xl am-padding-top-xl am-padding-bottom-xl">
+            <div class="am-panel-bd am-margin-xl am-padding-lg">
+                <div class="am-u-sm-9 am-u-sm-centered am-cf">
+                    <div class="am-u-sm-2"><i class="am-icon-btn am-icon-check am-warning"></i></div>
+                    <div class="am-u-sm-10">
+                        <h1 class="am-text-warning">您的提现已成功提交</h1>
+                        <ul class="am-avg-sm-4">
+                            <li>提现金额</li>
+                            <li>￥10.00</li>
+                            <li>实际到账金额</li>
+                            <li>￥10.00</li>
+                            <li>手续费</li>
+                            <li>￥0.00</li>
+                            <li>预计到账时间</li>
+                            <li>2016-01-10</li>
+                        </ul>
 
-                        <div class="am-form-group">
-                            <label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label">密码</label>
-                            <div class="am-u-sm-9">
-                                <input type="password" id="doc-ipt-pwd-2" class="am-round" placeholder="">
-                            </div>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                        <p class="am-text-gray">如有任何疑问，可拨打我们的热线电话400-819-0006</p>
+                        <div>
+                            <a href="###" class="am-btn am-btn-sm am-btn-warning am-round">返回我的账户</a>
                         </div>
-                        <div class="am-form-group sign-code">
-                            <label for="doc-ipt-3" class="am-u-sm-3 am-form-label">用户名</label>
-                            <div class="am-input-group am-round am-u-sm-9">
-                                <input type="text" class="am-form-field">
-                                <span class="am-input-group-btn">
-                                <button class="am-btn am-btn-default am-round" type="button">1234</button>
-                              </span>
-                            </div>
-                        </div>
-                        <div class="am-form-group">
-                            <div class="am-u-sm-offset-2 am-u-sm-10">
-                                <div class="am-fr am-text-right">
-                                    <label>
-                                        <a href="###" class="sign-btn-forget">忘记密码?</a>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="am-form-group">
-                            <div class="am-u-sm-12">
-                                <button type="submit" class="am-btn sign-btn-submit am-btn-warning am-btn-xl am-btn-block am-round">登 &nbsp;&nbsp; 录</button>
-                                <a class="am-btn am-btn-link sign-btn-reg  am-btn-block">立即注册</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="am-u-sm-12 am-u-lg-6 sign-ad">
-                    <img src="/static/pic/login_ad.jpg" alt="" class="am-img-responsive am-fr">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -146,7 +118,9 @@
     <script src="/lib/AmazeUI-2.5.0/assets/js/amazeui.min.js"></script>
     <script src="/static/js/ztb.js"></script>
     <script>
-
+        $(function() {
+            $('#doc-my-tabs').tabs();
+        })
 
     </script>
 
