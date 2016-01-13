@@ -43,42 +43,33 @@
 
     <!--  轮播图  -->
     <div class="layer-header">
-        <!--
-        <div class="header-desc am-text-center">
-    <div class="am-container">
-        <div class="header-desc-content am-fr">
-            <h2 class="am-slider-title">活期年化收益</h2>
-            <p>6.19%</p>
-            <p>快捷支取 | 本息安心</p>
-            <a href="###" class="am-btn am-btn-xl">马上注册</a>
-            <a href="###">立即登录</a>
+        <div class="header-info am-text-warning am-text-center am-padding-lg">
+            <div class="am-text-xl">活期年化收益</div>
+            <div class="am-text-xxxxxl">6.19%</div>
+            <div class="am-text-lg am-text-default am-text-deepblue">
+                快捷支取 | 本息安心
+            </div>
+            <p><a href="./reg.html" class="am-btn am-btn-lg am-btn-warning am-round am-padding-left-lg am-padding-right-lg">马上注册</a></p>
+            <p class="am-text-default"><a href="./login.html" class="am-text-deepblue">立即登录</a></p>
         </div>
-    </div>
-</div>
--->
-        <div data-am-widget="slider" class="header-slider am-slider am-slider-a1 " data-am-slider='{&quot;directionNav&quot;:false}'>
-            <ul class="am-slides">
-                <li>
-                    <img src="/static/pic/banner_index_1.jpg">
-
-                </li>
-                <li>
-                    <img src="/static/pic/banner_index_1.jpg">
-                </li>
-                <li>
-                    <img src="/static/pic/banner_index_1.jpg">
-                </li>
-                <li>
-                    <img src="/static/pic/banner_index_1.jpg">
-                </li>
-            </ul>
+        <div class="header-focus" style="background-color:#EF5553">
+            <div data-am-widget="slider" class="header-slider am-slider-manual am-slider " data-am-slider='{&quot;directionNav&quot;:false}'>
+                <ul class="am-slides">
+                    <li class="focus-item">
+                        <a href="###" class="focus-img"><img src="/static/pic/banner-fcfcfc.png"></a>
+                    </li>
+                    <li class="focus-item">
+                        <a href="###" class="focus-img"><img src="/static/pic/banner-fcfcfc.png"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
 
     <!-- 布局 -->
     <div class="layer-floor floor-1 floor-newbie">
-        <div class="am-container am-padding-top-lg">
+        <div class="am-container am-padding-top-xl">
             <!-- 第一屏：新手入门  -->
             <div class="index-layer am-g am-text-center">
                 <div class="am-u-sm-8">
@@ -274,7 +265,12 @@
     <script src="/lib/AmazeUI-2.5.0/assets/js/amazeui.min.js"></script>
     <script src="/static/js/ztb.js"></script>
     <script>
-
+        $(function() {
+            $('.am-slider-manual').flexslider({
+                animation: 'fade',
+                controlNav: true
+            });
+        });
 
     </script>
 
