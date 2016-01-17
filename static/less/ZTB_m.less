@@ -8,7 +8,10 @@ body {
 .layer-pic,
 .layer-ad,
 .layer-box {
-    width: 640px;
+    min-width: 640px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .am-header {
     height: 90px;
@@ -26,7 +29,8 @@ body {
                 //                background-size: auto 70px;
             }
         }
-        .am-header-right {
+        .am-header-right,
+        .am-header-left {
             height: 90px;
             line-height: 90px;
         }
@@ -43,25 +47,44 @@ body {
         margin-bottom: 0;
         font-weight: 500;
         letter-spacing: 1rem;
+        &.layer-title-orange {
+            background-color: #FCAD74;
+            color: #FFF;
+        }
     }
     .layer-body {
         overflow: hidden;
+        &.layer-danger {
+            background-color: #F07B58;
+        }
         &.layer-bg-orange {
             height: 217px;
             background: #FFF url('/static/img/mobile/d9.png') no-repeat center top;
+        }
+        &.layer-orange {
+            background-color: #FCAD74;
         }
         &.layer-bg-yellow-dark {
             height: 512px;
             background: #FFF url('/static/img/mobile/b13.png') no-repeat center top;
         }
+        &.layer-yellow-dark {
+            background-color: #FCD379;
+        }
         &.layer-bg-yellow {
             height: 324px;
             background: #FFF url('/static/img/mobile/b14.png') no-repeat center top;
         }
+        &.layer-yellow {
+            background-color: #FDDDA0;
+        }
+        &.layer-bg-tawny-light {
+            background-color: #F4F0ED;
+        }
         .layer-ribbon {
             width: 562px;
             height: 99px;
-            margin: 36px auto 0;
+            //            margin: 36px auto 0;
             color: #FFF;
             background: url('/static/img/mobile/b3.png') no-repeat center top;
         }
@@ -71,6 +94,11 @@ body {
     }
     .layer-foot {
         padding: 30px;
+        .am-btn-xxl {
+            font-size: 2.8rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
     }
 }
 .am-footer {
@@ -96,14 +124,24 @@ body {
 .am-text-white {
     color: #FFF;
 }
+.am-text-tawny-light {
+    color: #9D9389;
+}
 .am-text-xxxxl {
     font-size: 5rem;
 }
 .am-text-xxxxxl {
     font-size: 6.2rem;
 }
-.am-btn-orange {
+.am-btn-orange-light {
     background-color: #FCAD74;
+    color: #FFF;
+    &:hover {
+        color: #FFF;
+    }
+}
+.am-btn-orange {
+    background-color: #ED6942;
     color: #FFF;
     &:hover {
         color: #FFF;
@@ -123,4 +161,10 @@ body {
     a {
         color: #FFF;
     }
+}
+.am-padding-left-xxl {
+    padding-left: 5rem;
+}
+.am-padding-right-xxl {
+    padding-right: 5rem;
 }
