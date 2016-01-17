@@ -1,0 +1,126 @@
+// out: ../css/ZTB_m.css, compress: true, strictMath: true
+body {
+    background-color: #FFF;
+}
+.am-header,
+.am-footer,
+.layer-header,
+.layer-pic,
+.layer-ad,
+.layer-box {
+    width: 640px;
+}
+.am-header {
+    height: 90px;
+    &.am-header-white {
+        background-color: #FFF;
+        border-bottom: #eee;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+        .am-header-brand {
+            float: left;
+            a {
+                width: 160px;
+                height: 90px;
+                display: block;
+                background: url('../img/mobile/logo.png') no-repeat left center;
+                //                background-size: auto 70px;
+            }
+        }
+        .am-header-right {
+            height: 90px;
+            line-height: 90px;
+        }
+        .am-header-icon {
+            color: #E48765;
+            &.am-header-icon-user {}
+        }
+    }
+}
+.layer-box {
+    .layer-title {
+        height: 75px;
+        line-height: 75px;
+        margin-bottom: 0;
+        font-weight: 500;
+        letter-spacing: 1rem;
+    }
+    .layer-body {
+        overflow: hidden;
+        &.layer-bg-orange {
+            height: 217px;
+            background: #FFF url('/static/img/mobile/d9.png') no-repeat center top;
+        }
+        &.layer-bg-yellow-dark {
+            height: 512px;
+            background: #FFF url('/static/img/mobile/b13.png') no-repeat center top;
+        }
+        &.layer-bg-yellow {
+            height: 324px;
+            background: #FFF url('/static/img/mobile/b14.png') no-repeat center top;
+        }
+        .layer-ribbon {
+            width: 562px;
+            height: 99px;
+            margin: 36px auto 0;
+            color: #FFF;
+            background: url('/static/img/mobile/b3.png') no-repeat center top;
+        }
+        .layer-tips {
+            margin-top: 0;
+        }
+    }
+    .layer-foot {
+        padding: 30px;
+    }
+}
+.am-footer {
+    font-weight: 400;
+    font-size: 2rem;
+    .am-footer-divider {
+        padding: 0 10px;
+    }
+}
+// 重置公用
+.am-text-gray {
+    color: #B5B5B5;
+}
+.am-text-orange {
+    color: #FCAD74;
+}
+.am-text-deepblue {
+    color: #274255;
+}
+.am-text-brown {
+    color: #7B5202;
+}
+.am-text-white {
+    color: #FFF;
+}
+.am-text-xxxxl {
+    font-size: 5rem;
+}
+.am-text-xxxxxl {
+    font-size: 6.2rem;
+}
+.am-btn-orange {
+    background-color: #FCAD74;
+    color: #FFF;
+    &:hover {
+        color: #FFF;
+    }
+}
+.am-btn-orange-border {
+    border-color: #FCAD74;
+    background-color: #FFF;
+    color: #FCAD74;
+    &:hover {
+        color: #FCAD74;
+    }
+}
+.am-bg-gray {
+    background-color: #BCBABB;
+    color: #FFF;
+    a {
+        color: #FFF;
+    }
+}
